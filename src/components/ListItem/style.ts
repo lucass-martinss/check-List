@@ -11,9 +11,10 @@ export const Container = styled.div(({ done }: ContainerProp) => (
     border-radius: 10px;
     margim-bottom: 10px;
     align-items: center;
-    margin-top:10px;
+    margin-top: 10px;
+    max-width: max-content; 
     
-    input{
+    .checkbox{
         height: 15px;
         width: 15px;
     }
@@ -33,6 +34,7 @@ export const Container = styled.div(({ done }: ContainerProp) => (
         display: content;
         padding: 3px;
         border-radius: 100%;
+        margin-left: 30px;
        
     } 
     `

@@ -4,11 +4,8 @@ import { Item } from './types/Item';
 import { ListItem } from './components/ListItem';
 import { AddItem } from './components/AddItem';
 
-const App = () => {
-  const [list, setList] = useState<Item[]>([
-    {
-      id: 1, name: "Writte yor task", done: false,
-    }])
+const Checklist = () => {
+  const [list, setList] = useState<Item[]>([])
     
   const handleAddItem = (taskName: string) => {
     let newList = [...list];
@@ -39,7 +36,7 @@ const App = () => {
 
       <C.Area>
 
-        <C.Header>To do List</C.Header>
+        <C.Header>Checklist</C.Header>
 
         <AddItem onKeyboard={handleAddItem} onClick={handleAddItem}/>
 
@@ -53,4 +50,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Checklist;

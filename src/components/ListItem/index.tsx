@@ -10,6 +10,7 @@ export const ListItem = ({ item, onChecked, onDelete}: ItemProp) => {
     return (
         <C.Container done={item.done} >
             <input 
+            className='Checkbox'
             type='checkbox' 
             checked={item.done}
             onChange={e => onChecked(item.id, e.target.checked)}

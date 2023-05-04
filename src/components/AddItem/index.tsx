@@ -33,6 +33,7 @@ export const AddItem = ({ onKeyboard, onClick }: AddItemProps) => {
                     value={text}
                     onChange={e => setText(e.target.value)}
                     onKeyUp={handleKeyUp}
+                    maxLength={100}
                 />
             </C.Box>
             

@@ -11,7 +11,7 @@ export const Container = styled.div`
     padding: 10px;
  `;
  export const Header = styled.h1`
-    margin: 0;
+    margin-top: 60px ;
     padding: 0;
     color: #FFF;
     text-align: center;
